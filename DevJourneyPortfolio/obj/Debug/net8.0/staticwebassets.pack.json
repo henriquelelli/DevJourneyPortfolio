@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/obj/Debug/net8.0/compressed/rxedn0ssrj.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/obj/Debug/net8.0/scopedcss/bundle/DevJourneyPortfolio.styles.css",
+      "PackagePath": "staticwebassets/DevJourneyPortfolio.styles.css"
+    },
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/henriquelelli/DevJourneyPortfolio/DevJourneyPortfolio/wwwroot/sample-data/weather.json",
+      "PackagePath": "staticwebassets/sample-data/weather.json"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.DevJourneyPortfolio.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.DevJourneyPortfolio.props",
+      "PackagePath": "build\\DevJourneyPortfolio.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.DevJourneyPortfolio.props",
+      "PackagePath": "buildMultiTargeting\\DevJourneyPortfolio.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.DevJourneyPortfolio.props",
+      "PackagePath": "buildTransitive\\DevJourneyPortfolio.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

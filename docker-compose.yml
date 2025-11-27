@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  portfolio:
+    image: devjourney-portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '9095:80'
+    restart: always

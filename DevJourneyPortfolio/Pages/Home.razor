@@ -1,0 +1,137 @@
+﻿@page "/"
+@using MudBlazor
+
+<PageTitle>DevJourney | Henrique Lelli</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="mt-16">
+    
+    <MudGrid Class="d-flex align-center justify-center mb-16">
+        <MudItem xs="12" sm="6">
+            <MudText Typo="Typo.h2" Color="Color.Primary" Class="mb-4"><b>Bridging Industrial Process &<br/>Software Architecture</b></MudText>
+            <MudText Typo="Typo.h5" Class="mb-8">
+                Engenheiro Químico transformado em Engenheiro de Software .NET.
+                Especialista em resolver problemas complexos de integração e lógica de negócio.
+            </MudText>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Link="https://www.linkedin.com/in/henriquelelli" Target="_blank">Conectar no LinkedIn</MudButton>
+            <MudButton Variant="Variant.Outlined" Color="Color.Secondary" Size="Size.Large" Class="ml-4" Link="https://github.com/henriquelelli" Target="_blank">Ver Código</MudButton>
+        </MudItem>
+        <MudItem xs="12" sm="6" Class="d-flex justify-center">
+            <MudIcon Icon="@Icons.Material.Filled.Architecture" Size="Size.Large" Style="font-size: 10rem;" Color="Color.Tertiary" />
+        </MudItem>
+    </MudGrid>
+
+    <MudDivider Class="my-16" />
+
+    <MudText Typo="Typo.h4" Align="Align.Center" Class="mb-8"><b>Projetos & Engenharia</b></MudText>
+    
+    <MudGrid Spacing="4" Justify="Justify.Center">
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="4" Class="h-100">
+                <MudCardHeader>
+                    <CardHeaderAvatar>
+                        <MudIcon Icon="@Icons.Material.Filled.Security" />
+                    </CardHeaderAvatar>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">Homelab & Security</MudText>
+                        <MudText Typo="Typo.body2">Infraestrutura Zero Trust</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2">Implementação de servidor de mídia seguro usando Docker, Cloudflare WAF, Geo-Blocking e Nginx Proxy Manager.</MudText>
+                    <MudChip T="string" Color="Color.Dark" Size="Size.Small" Class="mt-3">Docker</MudChip>
+                    <MudChip T="string" Color="Color.Warning" Size="Size.Small" Class="mt-3">Cloudflare</MudChip>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Ler Artigo</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="4" Class="h-100">
+                <MudCardHeader>
+                    <CardHeaderAvatar>
+                        <MudIcon Icon="@Icons.Material.Filled.Factory" />
+                    </CardHeaderAvatar>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">SAP Mock Integration</MudText>
+                        <MudText Typo="Typo.body2">Arquitetura Enterprise</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2">API em .NET 8 simulando tabelas SAP (MARA, KNA1) via OData para testes de integração de Addons industriais.</MudText>
+                    <MudChip T="string" Color="Color.Success" Size="Size.Small" Class="mt-3">C# .NET 8</MudChip>
+                    <MudChip T="string" Color="Color.Info" Size="Size.Small" Class="mt-3">OData</MudChip>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Ver GitHub</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="4" Class="h-100">
+                <MudCardHeader>
+                    <CardHeaderAvatar>
+                        <MudIcon Icon="@Icons.Material.Filled.AutoFixHigh" />
+                    </CardHeaderAvatar>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">Process Automation</MudText>
+                        <MudText Typo="Typo.body2">Otimização de Fluxos</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2">Workflows complexos de ETL e automação usando n8n self-hosted, integrando APIs legadas com sistemas modernos.</MudText>
+                    <MudChip T="string" Color="Color.Error" Size="Size.Small" Class="mt-3">n8n</MudChip>
+                    <MudChip T="string" Color="Color.Primary" Size="Size.Small" Class="mt-3">Low-Code</MudChip>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Ver Detalhes</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+
+    <MudDivider Class="my-16" />
+
+    <MudText Typo="Typo.h4" Align="Align.Center" Class="mb-8"><b>A Jornada</b></MudText>
+    <MudTimeline TimelineOrientation="TimelineOrientation.Vertical" TimelinePosition="TimelinePosition.Alternate">
+        <MudTimelineItem Color="Color.Success" Variant="Variant.Filled">
+            <ItemOpposite>
+                <MudText Color="Color.Success" Typo="Typo.h5">2013</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudText Typo="Typo.h6">Engenharia Química (FEI)</MudText>
+                <MudText Typo="Typo.body2">Base sólida em processos complexos, termodinâmica e lógica industrial.</MudText>
+            </ItemContent>
+        </MudTimelineItem>
+        <MudTimelineItem Color="Color.Info" Variant="Variant.Filled">
+            <ItemOpposite>
+                <MudText Color="Color.Info" Typo="Typo.h5">2021</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudText Typo="Typo.h6">Gestão de Projetos (USP)</MudText>
+                <MudText Typo="Typo.body2">Especialização em metodologias ágeis e gestão de recursos.</MudText>
+            </ItemContent>
+        </MudTimelineItem>
+        <MudTimelineItem Color="Color.Warning" Variant="Variant.Filled">
+            <ItemOpposite>
+                <MudText Color="Color.Warning" Typo="Typo.h5">2022</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudText Typo="Typo.h6">Software Developer</MudText>
+                <MudText Typo="Typo.body2">Transição de carreira. Foco em PHP, Fullstack e sistemas web legados.</MudText>
+            </ItemContent>
+        </MudTimelineItem>
+        <MudTimelineItem Color="Color.Primary" Variant="Variant.Filled">
+            <ItemOpposite>
+                <MudText Color="Color.Primary" Typo="Typo.h5">Hoje</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudText Typo="Typo.h6">.NET Enterprise Engineer</MudText>
+                <MudText Typo="Typo.body2">Foco em Arquitetura de Software, C#, Cloud Híbrida e Integrações SAP.</MudText>
+            </ItemContent>
+        </MudTimelineItem>
+    </MudTimeline>
+
+</MudContainer>
