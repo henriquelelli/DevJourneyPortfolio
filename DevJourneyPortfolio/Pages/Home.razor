@@ -6,26 +6,91 @@
 <MudContainer MaxWidth="MaxWidth.Large" Class="mt-16">
     
     <MudGrid Class="d-flex align-center justify-center mb-16">
-        <MudItem xs="12" sm="6">
-            <MudText Typo="Typo.h2" Color="Color.Primary" Class="mb-4"><b>Bridging Industrial Process &<br/>Software Architecture</b></MudText>
-            <MudText Typo="Typo.h5" Class="mb-8">
-                Engenheiro Químico transformado em Engenheiro de Software .NET.
-                Especialista em resolver problemas complexos de integração e lógica de negócio.
+        <MudItem xs="12" md="6" Class="d-flex flex-column justify-center pr-md-12"> <MudText Typo="Typo.h3" Style="font-weight: 800; line-height: 1.2;" Color="Color.Primary" Class="mb-6">
+                Bridging Industrial <br/>
+                Process & Software <br/>
+                Architecture
             </MudText>
-            <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Link="https://www.linkedin.com/in/henriquelelli" Target="_blank">Conectar no LinkedIn</MudButton>
-            <MudButton Variant="Variant.Outlined" Color="Color.Secondary" Size="Size.Large" Class="ml-4" Link="https://github.com/henriquelelli" Target="_blank">Ver Código</MudButton>
+            
+            <MudText Typo="Typo.body1" Style="font-size: 1.1rem; color: #b0b0b0; line-height: 1.6;" Class="mb-10">
+                Software Engineer focused on Mission-Critical Solutions and System Integration. 
+                Combining a solid industrial background with Fullstack experience and .NET Enterprise specialization.<br/>
+                Expert in solving complex business logic and architectural challenges.
+            </MudText>
+            
+            <div class="d-flex gap-4">
+                <MudButton Href="https://www.linkedin.com/in/henriquelelli" Target="_blank"
+                        Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" 
+                        Style="font-weight: bold; border-radius: 8px;">
+                    Connect on LinkedIn
+                </MudButton>
+                
+                <MudTooltip Text="Coming Soon">
+                    <MudButton Variant="Variant.Outlined" Color="Color.Secondary" Size="Size.Large" Disabled="true"
+                            Style="border-radius: 8px;">
+                        Code
+                    </MudButton>
+                </MudTooltip>
+            </div>
+
         </MudItem>
-        <MudItem xs="12" sm="6" Class="d-flex justify-center">
-            <MudIcon Icon="@Icons.Material.Filled.Architecture" Size="Size.Large" Style="font-size: 10rem;" Color="Color.Tertiary" />
+        <MudItem xs="18" sm="6" Class="d-flex justify-center">
+            <!-- <MudIcon Icon="@Icons.Material.Filled.Architecture" Size="Size.Large" Style="font-size: 10rem;" Color="Color.Tertiary" /> -->
+            <MudPaper Elevation="25" Class="pa-6 rounded-xl" 
+                    Style="background-color: #111111; 
+                            border: 1px solid #333; 
+                            box-shadow: 0 0 40px rgba(89, 74, 226, 0.15); 
+                            font-family: 'Consolas', 'Courier New', monospace; 
+                            width: 100%; 
+                            min-height: 350px;">
+                
+                <div class="d-flex align-center gap-2 mb-6 border-b border-solid pb-4" style="border-color: #333;">
+                    <MudIcon Icon="@Icons.Material.Filled.Security" />
+                    <MudIcon Icon="@Icons.Material.Filled.Factory" />
+                    <MudIcon Icon="@Icons.Material.Filled.AutoFixHigh" />
+                    <MudText Typo="Typo.caption" Class="ml-4" Style="color: #666;">Program.cs - DevJourney</MudText>
+                </div>
+                
+                <div style="font-size: 1.1rem; line-height: 1.6;">
+                    <MudText Typo="Typo.body2" Style="color: #6A9955;">// Building the bridge between Industry and Tech...</MudText>
+                    
+                    <div class="mt-2">
+                        <MudText Typo="Typo.caption" Style="color: #C586C0;">using</MudText> <MudText Typo="Typo.caption" Style="color: #D4D4D4;">System.EnterpriseServices;</MudText><br/>
+                        <MudText Typo="Typo.caption" Style="color: #C586C0;">using</MudText> <MudText Typo="Typo.caption" Style="color: #D4D4D4;">Industrial.Processes;</MudText>
+                    </div>
+
+                    <div class="mt-4">
+                        <MudText Typo="Typo.caption" Style="color: #569CD6;">public class</MudText> 
+                        <MudText Typo="Typo.caption" Style="color: #4EC9B0;">CareerPath</MudText> : <MudText Typo="Typo.caption" Style="color: #4EC9B0;">BaseEngineer</MudText>
+                    </div>
+                    <div style="color: #D4D4D4;">{</div>
+                    
+                    <div class="ml-4">
+                        <MudText Typo="Typo.caption" Style="color: #569CD6;">public override void</MudText> <MudText Typo="Typo.caption" Style="color: #DCDCAA;">Evolve</MudText>()
+                        {
+                            <br/>
+                            <MudText Typo="Typo.caption" Style="color: #4EC9B0;">var</MudText> <MudText Typo="Typo.caption" Style="color: #9CDCFE;">stack</MudText> = <MudText Typo="Typo.caption" Style="color: #CE9178;">".NET 8 Enterprise"</MudText>;
+                            <br/>
+                            <MudText Typo="Typo.caption" Style="color: #4EC9B0;">var</MudText> <MudText Typo="Typo.caption" Style="color: #9CDCFE;">focus</MudText> = <MudText Typo="Typo.caption" Style="color: #CE9178;">"High Scalability"</MudText>;
+                            <br/><br/>
+                            <MudText Typo="Typo.caption" Style="color: #6A9955;">// Deploying new version...</MudText>
+                            <br/>
+                            <MudText Typo="Typo.caption" Style="color: #DCDCAA;">LaunchCareer</MudText>(<MudText Typo="Typo.caption" Style="color: #9CDCFE;">stack</MudText>, <MudText Typo="Typo.caption" Style="color: #9CDCFE;">focus</MudText>);
+                        }
+                    </div>
+                    
+                    <div style="color: #D4D4D4;">}</div>
+                </div>
+            </MudPaper>
         </MudItem>
     </MudGrid>
 
     <MudDivider Class="my-16" />
 
-    <MudText Typo="Typo.h4" Align="Align.Center" Class="mb-8"><b>Projetos & Engenharia</b></MudText>
+    <MudText Typo="Typo.h4" Align="Align.Center" Class="mb-8"><b>Projects & Engineering</b></MudText>
     
     <MudGrid Spacing="4" Justify="Justify.Center">
-        <MudItem xs="12" sm="6" md="4">
+        <MudItem xs="12" sm="6" md="6">
             <MudCard Elevation="4" Class="h-100">
                 <MudCardHeader>
                     <CardHeaderAvatar>
@@ -33,21 +98,25 @@
                     </CardHeaderAvatar>
                     <CardHeaderContent>
                         <MudText Typo="Typo.h6">Homelab & Security</MudText>
-                        <MudText Typo="Typo.body2">Infraestrutura Zero Trust</MudText>
+                        <MudText Typo="Typo.body2">Zero Trust Infrastructure</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
-                    <MudText Typo="Typo.body2">Implementação de servidor de mídia seguro usando Docker, Cloudflare WAF, Geo-Blocking e Nginx Proxy Manager.</MudText>
+                    <MudText Typo="Typo.body2">Secure media server implementation using Juellyfin, Tailscale, Docker, Cloudflare WAF, Geo-Blocking and Nginx Proxy Manager.</MudText>
                     <MudChip T="string" Color="Color.Dark" Size="Size.Small" Class="mt-3">Docker</MudChip>
                     <MudChip T="string" Color="Color.Warning" Size="Size.Small" Class="mt-3">Cloudflare</MudChip>
+                    <MudChip T="string" Color="Color.Error" Size="Size.Small" Class="mt-3">Jellyfin</MudChip>
+                    <MudChip T="string" Color="Color.Dark" Size="Size.Small" Class="mt-3">Tailscale</MudChip>
                 </MudCardContent>
                 <MudCardActions>
-                    <MudButton Variant="Variant.Text" Color="Color.Primary">Ler Artigo</MudButton>
+                    <MudTooltip Text="Em desenvolvimento / Coming Soon">
+                        <MudButton Variant="Variant.Text" Color="Color.Primary" Disabled="true">Coming Soon</MudButton>
+                    </MudTooltip>
                 </MudCardActions>
             </MudCard>
         </MudItem>
 
-        <MudItem xs="12" sm="6" md="4">
+        <MudItem xs="12" sm="6" md="6">
             <MudCard Elevation="4" Class="h-100">
                 <MudCardHeader>
                     <CardHeaderAvatar>
@@ -55,21 +124,26 @@
                     </CardHeaderAvatar>
                     <CardHeaderContent>
                         <MudText Typo="Typo.h6">SAP Mock Integration</MudText>
-                        <MudText Typo="Typo.body2">Arquitetura Enterprise</MudText>
+                        <MudText Typo="Typo.body2">Enterprise Architecture</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
-                    <MudText Typo="Typo.body2">API em .NET 8 simulando tabelas SAP (MARA, KNA1) via OData para testes de integração de Addons industriais.</MudText>
+                    <MudText Typo="Typo.body2">API in .NET 8 simulating SAP tables (MARA, KNA1) via OData for testing industrial Addons integration.</MudText>
                     <MudChip T="string" Color="Color.Success" Size="Size.Small" Class="mt-3">C# .NET 8</MudChip>
+                    <MudChip T="string" Color="Color.Warning" Size="Size.Small" Class="mt-3">Clean Code</MudChip>
                     <MudChip T="string" Color="Color.Info" Size="Size.Small" Class="mt-3">OData</MudChip>
+                    <MudChip T="string" Color="Color.Info" Size="Size.Small" Class="mt-3">SAP</MudChip>
+                    <MudChip T="string" Color="Color.Dark" Size="Size.Small" Class="mt-3">ERPs</MudChip>
                 </MudCardContent>
                 <MudCardActions>
-                    <MudButton Variant="Variant.Text" Color="Color.Primary">Ver GitHub</MudButton>
+                    <MudTooltip Text="Em desenvolvimento / Coming Soon">
+                        <MudButton Variant="Variant.Text" Color="Color.Primary" Disabled="true">Coming Soon</MudButton>
+                    </MudTooltip>
                 </MudCardActions>
             </MudCard>
         </MudItem>
 
-        <MudItem xs="12" sm="6" md="4">
+        <MudItem xs="12" sm="6" md="6">
             <MudCard Elevation="4" Class="h-100">
                 <MudCardHeader>
                     <CardHeaderAvatar>
@@ -81,12 +155,42 @@
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
-                    <MudText Typo="Typo.body2">Workflows complexos de ETL e automação usando n8n self-hosted, integrando APIs legadas com sistemas modernos.</MudText>
+                    <MudText Typo="Typo.body2">Complex workflows of ETL and automation using n8n self-hosted, integrating legacy APIs with modern systems.</MudText>
                     <MudChip T="string" Color="Color.Error" Size="Size.Small" Class="mt-3">n8n</MudChip>
                     <MudChip T="string" Color="Color.Primary" Size="Size.Small" Class="mt-3">Low-Code</MudChip>
+                    <MudChip T="string" Color="Color.Success" Size="Size.Small" Class="mt-3">Architecture</MudChip>
                 </MudCardContent>
                 <MudCardActions>
-                    <MudButton Variant="Variant.Text" Color="Color.Primary">Ver Detalhes</MudButton>
+                    <MudTooltip Text="Em desenvolvimento / Coming Soon">
+                        <MudButton Variant="Variant.Text" Color="Color.Primary" Disabled="true">Coming Soon</MudButton>
+                    </MudTooltip>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+
+        <MudItem xs="12" sm="6" md="6">
+            <MudCard Elevation="4" Class="h-100">
+                <MudCardHeader>
+                    <CardHeaderAvatar>
+                        <MudIcon Icon="@Icons.Material.Filled.Code" />
+                    </CardHeaderAvatar>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">Legacy Modernization</MudText>
+                        <MudText Typo="Typo.body2">Sustentação & Evolução</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2">Critical maintenance of web ecosystem, implementing performance improvements and gradual refactoring of legacy code.</MudText>
+                    <MudChip T="string" Color="Color.Info" Size="Size.Small" Class="mt-3">PHP</MudChip>
+                    <MudChip T="string" Color="Color.Warning" Size="Size.Small" Class="mt-3">MySQL</MudChip>
+                    <MudChip T="string" Color="Color.Warning" Size="Size.Small" Class="mt-3">JavaScript</MudChip>
+                    <MudChip T="string" Color="Color.Primary" Size="Size.Small" Class="mt-3">Bootstrap</MudChip>
+                    <MudChip T="string" Color="Color.Info" Size="Size.Small" Class="mt-3">jQuery</MudChip>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudTooltip Text="Em desenvolvimento / Coming Soon">
+                        <MudButton Variant="Variant.Text" Color="Color.Primary" Disabled="true">Coming Soon</MudButton>
+                    </MudTooltip>
                 </MudCardActions>
             </MudCard>
         </MudItem>
@@ -94,15 +198,15 @@
 
     <MudDivider Class="my-16" />
 
-    <MudText Typo="Typo.h4" Align="Align.Center" Class="mb-8"><b>A Jornada</b></MudText>
+    <MudText Typo="Typo.h4" Align="Align.Center" Class="mb-8"><b>The Journey</b></MudText>
     <MudTimeline TimelineOrientation="TimelineOrientation.Vertical" TimelinePosition="TimelinePosition.Alternate">
         <MudTimelineItem Color="Color.Success" Variant="Variant.Filled">
             <ItemOpposite>
                 <MudText Color="Color.Success" Typo="Typo.h5">2013</MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudText Typo="Typo.h6">Engenharia Química (FEI)</MudText>
-                <MudText Typo="Typo.body2">Base sólida em processos complexos, termodinâmica e lógica industrial.</MudText>
+                <MudText Typo="Typo.h6">Chemical Engineering</MudText>
+                <MudText Typo="Typo.body2">Solid foundation in complex processes, thermodynamics, and industrial logic.</MudText>
             </ItemContent>
         </MudTimelineItem>
         <MudTimelineItem Color="Color.Info" Variant="Variant.Filled">
@@ -110,8 +214,8 @@
                 <MudText Color="Color.Info" Typo="Typo.h5">2021</MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudText Typo="Typo.h6">Gestão de Projetos (USP)</MudText>
-                <MudText Typo="Typo.body2">Especialização em metodologias ágeis e gestão de recursos.</MudText>
+                <MudText Typo="Typo.h6">Project Management (USP)</MudText>
+                <MudText Typo="Typo.body2">Specialization in agile methodologies and resource management.</MudText>
             </ItemContent>
         </MudTimelineItem>
         <MudTimelineItem Color="Color.Warning" Variant="Variant.Filled">
@@ -120,16 +224,16 @@
             </ItemOpposite>
             <ItemContent>
                 <MudText Typo="Typo.h6">Software Developer</MudText>
-                <MudText Typo="Typo.body2">Transição de carreira. Foco em PHP, Fullstack e sistemas web legados.</MudText>
+                <MudText Typo="Typo.body2">Career transition. Focus on PHP, Fullstack, and legacy web systems.</MudText>
             </ItemContent>
         </MudTimelineItem>
         <MudTimelineItem Color="Color.Primary" Variant="Variant.Filled">
             <ItemOpposite>
-                <MudText Color="Color.Primary" Typo="Typo.h5">Hoje</MudText>
+                <MudText Color="Color.Primary" Typo="Typo.h5">Today</MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudText Typo="Typo.h6">.NET Enterprise Engineer</MudText>
-                <MudText Typo="Typo.body2">Foco em Arquitetura de Software, C#, Cloud Híbrida e Integrações SAP.</MudText>
+                <MudText Typo="Typo.h6">Software Engineer & .NET Specialist</MudText>
+                <MudText Typo="Typo.body2">Developing web systems and deepening expertise in Software Architecture, Cloud, and C#.</MudText>
             </ItemContent>
         </MudTimelineItem>
     </MudTimeline>

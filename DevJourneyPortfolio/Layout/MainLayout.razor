@@ -3,13 +3,12 @@
 <MudThemeProvider IsDarkMode="true" />
 <MudDialogProvider />
 <MudSnackbarProvider />
+<MudPopoverProvider />
 
 <MudLayout>
     <MudAppBar Fixed="true">
-        <MudText Typo="Typo.h5" Class="ml-3">DevJourneyPortfolio</MudText>
+        <MudText Typo="Typo.h5" Class="ml-3">DevJourney</MudText>
         <MudSpacer />
-        <!-- Placeholder for Language Selector -->
-        <MudIconButton Icon="@Icons.Material.Filled.Language" Color="Color.Inherit" Edge="Edge.End" />
         <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Href="https://github.com/henriquelelli" Target="_blank" />
         <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn" Color="Color.Inherit" Href="https://linkedin.com/in/henriquelelli" Target="_blank" />
     </MudAppBar>
@@ -18,4 +17,9 @@
             @Body
         </MudContainer>
     </MudMainContent>
+    <MudPaper Class="mud-theme-dark py-4" Square="true">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="d-flex justify-center">
+            <MudText Typo="Typo.body2" Align="Align.Center">© 2025 Henrique Lelli - Built with .NET 8 & MudBlazor</MudText>
+        </MudContainer>
+    </MudPaper>
 </MudLayout>

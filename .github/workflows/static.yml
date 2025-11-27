@@ -30,6 +30,9 @@ jobs:
       # Garante o .nojekyll
       - name: Add .nojekyll
         run: touch release/wwwroot/.nojekyll
+
+      - name: Create CNAME
+        run: echo "devjourney.com.br" > release/wwwroot/CNAME
         
       - name: Deploy to GitHub Pages
         uses: actions/upload-pages-artifact@v3
