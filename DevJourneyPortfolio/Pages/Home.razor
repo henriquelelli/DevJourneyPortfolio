@@ -13,9 +13,9 @@
             </MudText>
             
             <MudText Typo="Typo.body1" Style="font-size: 1.1rem; color: #b0b0b0; line-height: 1.6;" Class="mb-10">
-                Software Engineer focused on Mission-Critical Solutions and System Integration. 
-                Combining a solid industrial background with Fullstack experience and .NET Enterprise specialization.<br/>
-                Expert in solving complex business logic and architectural challenges.
+                Software Engineer focused on <b>Mission-Critical Solutions</b> and <b>System Integration</b>. 
+                Combining a solid industrial background with extensive Fullstack experience (PHP/JS) and a strategic focus on <b>Enterprise Architecture</b> (.NET/Node.js).
+                Expert in solving complex business logic and architectural challenges across <b>diverse technology stacks</b>.
             </MudText>
             
             <div class="d-flex gap-4">
@@ -94,10 +94,36 @@
             <MudCard Elevation="4" Class="h-100">
                 <MudCardHeader>
                     <CardHeaderAvatar>
+                        <MudIcon Icon="@Icons.Material.Filled.ShowChart" Color="Color.Primary" />
+                    </CardHeaderAvatar>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6" Color="Color.Primary">Financial Dashboard</MudText>
+                        <MudText Typo="Typo.body2">Fullstack JavaScript</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2">Real-time asset management dashboard POC. Built to demonstrate modern JS architecture and Cloud deployment.</MudText>
+                    <MudChip T="string" Color="Color.Error" Size="Size.Small" Class="mt-3">NestJS</MudChip>
+                    <MudChip T="string" Color="Color.Info" Size="Size.Small" Class="mt-3">PostgreSQL</MudChip>
+                    <MudChip T="string" Color="Color.Dark" Size="Size.Small" Class="mt-3">Next.js</MudChip>
+                    <MudChip T="string" Color="Color.Success" Size="Size.Small" Class="mt-3">NodeJS</MudChip>
+                    <MudChip T="string" Color="Color.Info" Size="Size.Small" Class="mt-3">TypeScript</MudChip>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudTooltip Text="Building right now...">
+                        <MudButton Variant="Variant.Text" Color="Color.Primary" Disabled="true">Coming Soon</MudButton>
+                    </MudTooltip>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="6">
+            <MudCard Elevation="4" Class="h-100">
+                <MudCardHeader>
+                    <CardHeaderAvatar>
                         <MudIcon Icon="@Icons.Material.Filled.Security" />
                     </CardHeaderAvatar>
                     <CardHeaderContent>
-                        <MudText Typo="Typo.h6">Homelab & Security</MudText>
+                        <MudText Typo="Typo.h6" Color="Color.Primary">Homelab & Security</MudText>
                         <MudText Typo="Typo.body2">Zero Trust Infrastructure</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
@@ -123,7 +149,7 @@
                         <MudIcon Icon="@Icons.Material.Filled.Factory" />
                     </CardHeaderAvatar>
                     <CardHeaderContent>
-                        <MudText Typo="Typo.h6">SAP Mock Integration</MudText>
+                        <MudText Typo="Typo.h6" Color="Color.Primary">SAP Mock Integration</MudText>
                         <MudText Typo="Typo.body2">Enterprise Architecture</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
@@ -150,8 +176,8 @@
                         <MudIcon Icon="@Icons.Material.Filled.AutoFixHigh" />
                     </CardHeaderAvatar>
                     <CardHeaderContent>
-                        <MudText Typo="Typo.h6">Process Automation</MudText>
-                        <MudText Typo="Typo.body2">Otimização de Fluxos</MudText>
+                        <MudText Typo="Typo.h6" Color="Color.Primary">Process Automation</MudText>
+                        <MudText Typo="Typo.body2">Workflow Optimization</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
@@ -175,8 +201,8 @@
                         <MudIcon Icon="@Icons.Material.Filled.Code" />
                     </CardHeaderAvatar>
                     <CardHeaderContent>
-                        <MudText Typo="Typo.h6">Legacy Modernization</MudText>
-                        <MudText Typo="Typo.body2">Sustentação & Evolução</MudText>
+                        <MudText Typo="Typo.h6" Color="Color.Primary">Legacy Modernization</MudText>
+                        <MudText Typo="Typo.body2">Maintenance & Evolution</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
@@ -202,38 +228,52 @@
     <MudTimeline TimelineOrientation="TimelineOrientation.Vertical" TimelinePosition="TimelinePosition.Alternate">
         <MudTimelineItem Color="Color.Success" Variant="Variant.Filled">
             <ItemOpposite>
-                <MudText Color="Color.Success" Typo="Typo.h5">2013</MudText>
+                <MudText Color="Color.Success" Typo="Typo.h6">2013</MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudText Typo="Typo.h6">Chemical Engineering</MudText>
-                <MudText Typo="Typo.body2">Solid foundation in complex processes, thermodynamics, and industrial logic.</MudText>
+                <MudPaper Elevation="3" Class="pa-4">
+                    <MudText Typo="Typo.h6">Chemical Engineering (FEI)</MudText>
+                    <MudText Typo="Typo.body2">Solid foundation in complex processes, thermodynamics, and industrial logic.</MudText>
+                </MudPaper>
             </ItemContent>
         </MudTimelineItem>
+
         <MudTimelineItem Color="Color.Info" Variant="Variant.Filled">
             <ItemOpposite>
-                <MudText Color="Color.Info" Typo="Typo.h5">2021</MudText>
+                <MudText Color="Color.Info" Typo="Typo.h6">2021</MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudText Typo="Typo.h6">Project Management (USP)</MudText>
-                <MudText Typo="Typo.body2">Specialization in agile methodologies and resource management.</MudText>
+                <MudPaper Elevation="3" Class="pa-4">
+                    <MudText Typo="Typo.h6">Project Management (USP)</MudText>
+                    <MudText Typo="Typo.body2">Specialization in agile methodologies and resource management.</MudText>
+                </MudPaper>
             </ItemContent>
         </MudTimelineItem>
+
         <MudTimelineItem Color="Color.Warning" Variant="Variant.Filled">
             <ItemOpposite>
-                <MudText Color="Color.Warning" Typo="Typo.h5">2022</MudText>
+                <MudText Color="Color.Warning" Typo="Typo.h6">2022</MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudText Typo="Typo.h6">Software Developer</MudText>
-                <MudText Typo="Typo.body2">Career transition. Focus on PHP, Fullstack, and legacy web systems.</MudText>
+                <MudPaper Elevation="3" Class="pa-4">
+                    <MudText Typo="Typo.h6">Software Developer</MudText>
+                    <MudText Typo="Typo.body2">Career transition. Focus on PHP, Fullstack, and legacy web systems.</MudText>
+                </MudPaper>
             </ItemContent>
         </MudTimelineItem>
+
         <MudTimelineItem Color="Color.Primary" Variant="Variant.Filled">
             <ItemOpposite>
-                <MudText Color="Color.Primary" Typo="Typo.h5">Today</MudText>
+                <MudText Color="Color.Primary" Typo="Typo.h6">Today</MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudText Typo="Typo.h6">Software Engineer & .NET Specialist</MudText>
-                <MudText Typo="Typo.body2">Developing web systems and deepening expertise in Software Architecture, Cloud, and C#.</MudText>
+                <MudPaper Elevation="3" Class="pa-4" Style="border-left: 4px solid #594ae2;">
+                    <MudText Typo="Typo.h6" Color="Color.Primary">Software Engineer & Solutions Architect</MudText>
+                    <MudText Typo="Typo.body2">
+                        Delivering robust web systems and deepening expertise in Software Architecture, Cloud, and Enterprise Integrations. 
+                        <b>Polyglot approach:</b> .NET, PHP, and Node.js ecosystems.
+                    </MudText>
+                </MudPaper>
             </ItemContent>
         </MudTimelineItem>
     </MudTimeline>
